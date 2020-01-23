@@ -1,0 +1,13 @@
+.vs/
+VkMessenger/bin/
+VkMessenger/obj/
+VkMessenger/_pkginfo.txt
+VkMessenger/BundleArtifacts/
+VkMessenger/Source/PrivateData.cs
+
+*.appx
+*.nuget.props
+*.nuget.targets
+*.csproj.user
+*_TemporaryKey.pfx
+project.lock.json

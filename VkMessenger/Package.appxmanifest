@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  IgnorableNamespaces="uap mp">
+
+  <Identity
+    Name="efe1261b-39d5-42e7-a83d-e8be94879a83"
+    Publisher="CN=Vitaliy_Arsentyev"
+    Version="1.0.0.0" />
+
+  <mp:PhoneIdentity PhoneProductId="efe1261b-39d5-42e7-a83d-e8be94879a83" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>VkMessenger</DisplayName>
+    <PublisherDisplayName>Venz</PublisherDisplayName>
+    <Logo>Resources\Package\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="VkMessenger.App">
+      <uap:VisualElements
+        DisplayName="VkMessenger"
+        Square150x150Logo="Resources\Package\Square150x150Logo.png"
+        Square44x44Logo="Resources\Package\Square44x44Logo.png"
+        Description="VkMessenger"
+        BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Resources\Package\Wide310x150Logo.png"/>
+        <uap:SplashScreen Image="Resources\Package\SplashScreen.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
