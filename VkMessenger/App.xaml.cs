@@ -1,12 +1,15 @@
 ﻿using System.Threading.Tasks;
 using Venz.UI.Xaml;
+using VkMessenger.Model;
 using VkMessenger.View;
 using Windows.ApplicationModel.Activation;
 
 namespace VkMessenger
 {
-    public sealed partial class App: Venz.UI.Xaml.Application
+    public sealed partial class App: Application
     {
+        public static ApplicationModel Model { get; } = new ApplicationModel();
+
         public App()
         {
             InitializeComponent();
